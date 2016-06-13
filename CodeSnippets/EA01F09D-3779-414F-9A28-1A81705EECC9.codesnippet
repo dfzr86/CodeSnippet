@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    XCTestExpectation *expectation = [self expectationWithDescription:@"Request should succeed"];
+    
+    [ACAccountManager checkVerifyCodeWithAccount:self.account verifyCode:@"33" callback:^(BOOL valid, NSError *error) {
+        XCTAssertNil(error);
+        [expectation fulfill];
+    }];
+    [self waitForExpectationsWithCommonTimeoutUsingHandler:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EA01F09D-3779-414F-9A28-1A81705EECC9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
